@@ -23,7 +23,6 @@ public class FilmeCustomRepository {
                 " from Filme as y where y.producers in(\n" +
                 " select f.producers " +
                 " from Filme as f " +
-                //  " where f.winner = 'yes'" +
                 " group by f.producers " +
                 " having count(f.producers) > 1\n" +
                 ")\n" +
