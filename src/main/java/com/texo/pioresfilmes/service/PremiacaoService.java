@@ -20,8 +20,8 @@ public class PremiacaoService {
     public Resultado apurarResultado() {
         List<Premiacao> relList = retornarIntervaloIndicacoes();
 
-        List<Premiacao> max = retornarPremiacaoComMenorIntervalo(relList);
-        List<Premiacao> min = retornarPremiacaoComMaiorIntervalo(relList);
+        List<Premiacao> min = retornarPremiacaoComMenorIntervalo(relList);
+        List<Premiacao> max = retornarPremiacaoComMaiorIntervalo(relList);
 
         return new Resultado(max,min);
     }
